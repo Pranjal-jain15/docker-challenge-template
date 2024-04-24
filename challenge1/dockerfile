@@ -1,0 +1,8 @@
+# Use Nginx base image
+FROM nginx:latest
+
+# Copy public folder contents to Nginx web server directory
+COPY ./public /usr/share/nginx/html
+
+# Expose port 80 to the outside world
+EXPOSE 80
